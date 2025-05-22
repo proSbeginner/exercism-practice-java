@@ -16,21 +16,21 @@ public class AccumulateTest {
                 .isEmpty();
     }
 
-    @Ignore("Remove to run test")
+
     @Test
     public void accumulateSquares() {
         assertThat(Accumulate.accumulate(Arrays.asList(1, 2, 3), x -> x * x))
                 .containsExactly(1, 4, 9);
     }
 
-    @Ignore("Remove to run test")
+    
     @Test
     public void accumulateUpperCases() {
         assertThat(Accumulate.accumulate(Arrays.asList("hello", "world"), String::toUpperCase))
                 .containsExactly("HELLO", "WORLD");
     }
 
-    @Ignore("Remove to run test")
+    
     @Test
     public void accumulateReversedStrings() {
         assertThat(Accumulate.accumulate(Arrays.asList("the", "quick", "brown", "fox", "etc"), this::reverse))
@@ -41,7 +41,7 @@ public class AccumulateTest {
         return new StringBuilder(input).reverse().toString();
     }
 
-    @Ignore("Remove to run test")
+    
     @Test
     public void accumulateWithinAccumulate() {
         List<String> input1 = Arrays.asList("a", "b", "c");
