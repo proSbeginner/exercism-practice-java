@@ -1,21 +1,42 @@
 class Clock {
+    private int hours;
+    private int minutes;
 
     Clock(int hours, int minutes) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.hours = hours;
+        this.minutes = minutes;
     }
 
     void add(int minutes) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        this.minutes += minutes;
     }
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        int hours = calculatedHours();
+        int minutes = calculatedMinutes();
+        return format(hours, minutes);
     }
 
     @Override
     public boolean equals(Object obj) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        if (obj instanceof Clock) {
+            Clock clock = (Clock) obj;
+            return clock.toString().equals(toString());
+        }
+        return false;
     }
 
+    private int calculatedHours() {
+        int hoursFromMinutes = Math.floorDiv(minutes, 60);
+        return Math.floorMod(hours + hoursFromMinutes, 24);
+    }
+
+    private int calculatedMinutes() {
+        return Math.floorMod(minutes, 60);
+    }
+
+    private String format(int hours, int minutes) {
+        return String.format("%02d:%02d", hours, minutes);
+    }
 }
