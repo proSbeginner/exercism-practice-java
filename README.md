@@ -153,3 +153,125 @@ ClockEqualTest > clocksWithNegativeHoursAndMinutes() PASSED
 
 ClockEqualTest > clocksWithSameTimeAreEqual() PASSED
 ```
+### 4. Acronym
+```
+AcronymTest > underscoreEmphasis() PASSED
+
+AcronymTest > lowercaseWords() PASSED
+
+AcronymTest > apostrophes() PASSED
+
+AcronymTest > basic() PASSED
+
+AcronymTest > veryLongAbbreviation() PASSED
+
+AcronymTest > nonAcronymAllCapsWord() PASSED
+
+AcronymTest > consecutiveDelimiters() PASSED
+
+AcronymTest > punctuationWithoutWhitespace() PASSED
+
+AcronymTest > punctuation() PASSED
+```
+### 5. Allergies
+```
+AllergiesTest > eggsNotAllergicToAnything() PASSED
+
+AllergiesTest > eggsAllergicToEverything() PASSED
+
+AllergiesTest > listNoAllergenScorePartsWithoutHighestValidScore() PASSED
+
+AllergiesTest > listoMoreThanEggsButNotPeanuts() PASSED
+
+AllergiesTest > listNoAllergenScoreParts() PASSED
+
+AllergiesTest > shellfishAllergicToSomethingButNotShellfish() PASSED
+
+AllergiesTest > tomatoesAllergicToTomatoesAndSomethingElse() PASSED
+
+AllergiesTest > listEverything() PASSED
+
+AllergiesTest > catsAllergicToEverything() PASSED
+
+AllergiesTest > pollenAllergicToEverything() PASSED
+
+AllergiesTest > chocolateAllergicToSomethingButNotChocolate() PASSED
+
+AllergiesTest > pollenNotAllergicToAnything() PASSED
+
+AllergiesTest > shellfishNotAllergicToAnything() PASSED
+
+AllergiesTest > listJustPeanuts() PASSED
+
+AllergiesTest > chocolateAllergicOnlyToChocolate() PASSED
+
+AllergiesTest > catsAllergicToSomethingButNotCats() PASSED
+
+AllergiesTest > tomatoesNotAllergicToAnything() PASSED
+
+AllergiesTest > peanutsAllergicToPeanutsAndSomethingElse() PASSED
+
+AllergiesTest > listManyAllergies() PASSED
+
+AllergiesTest > chocolateAllergicToChocolateAndSomethingElse() PASSED
+
+AllergiesTest > eggsAllergicToSomethingButNotEggs() PASSED
+
+AllergiesTest > listJustStrawberries() PASSED
+
+AllergiesTest > peanutsAllergicOnlyToPeanuts() PASSED
+
+AllergiesTest > strawberriesAllergicToEverything() PASSED
+
+AllergiesTest > listNoAllergies() PASSED
+
+AllergiesTest > strawberriesAllergicOnlyToStrawberries() PASSED
+
+AllergiesTest > tomatoesAllergicOnlyToTomatoes() PASSED
+
+AllergiesTest > chocolateNotAllergicToAnything() PASSED
+
+AllergiesTest > strawberriesAllergicToStrawberriesAndSomethingElse() PASSED
+
+AllergiesTest > eggsAllergicOnlyToEggs() PASSED
+
+AllergiesTest > pollenAllergicOnlyToPollen() PASSED
+
+AllergiesTest > catsAllergicToCatsAndSomethingElse() PASSED
+
+AllergiesTest > peanutsAllergicToEverything() PASSED
+
+AllergiesTest > pollenAllergicToSomethingButNotPollen() PASSED
+
+AllergiesTest > peanutsAllergicToSomethingButNotPeanuts() PASSED
+
+AllergiesTest > listJustEggs() PASSED
+
+AllergiesTest > strawberriesNotAllergicToAnything() PASSED
+
+AllergiesTest > tomatoesAllergicToSomethingButNotTomatoes() PASSED
+
+AllergiesTest > shellfishAllergicOnlyToShellfish() PASSED
+
+AllergiesTest > eggsAllergicToEggsAndSomethingElse() PASSED
+
+AllergiesTest > pollenAllergicToPollenAndSomethingElse() PASSED
+
+AllergiesTest > catsNotAllergicToAnything() PASSED
+
+AllergiesTest > peanutsNotAllergicToAnything() PASSED
+
+AllergiesTest > shellfishAllergicToEverything() PASSED
+
+AllergiesTest > tomatoesAllergicToEverything() PASSED
+
+AllergiesTest > listEggsAndPeanuts() PASSED
+
+AllergiesTest > shellfishAllergicToShellfishAndSomethingElse() PASSED
+
+AllergiesTest > strawberriesAllergicToSomethingButNotStrawberries() PASSED
+
+AllergiesTest > catsAllergicOnlyToCats() PASSED
+
+AllergiesTest > chocolateAllergicToEverything() PASSED
+```

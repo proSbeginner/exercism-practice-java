@@ -1,15 +1,24 @@
+import java.util.ArrayList;
 import java.util.List;
 
 class Allergies {
+    final int allergyScore;
+
     Allergies(int score) {
-        throw new UnsupportedOperationException("Please implement the Allergies constructor");
+        allergyScore = score;
     }
 
     boolean isAllergicTo(Allergen allergen) {
-        throw new UnsupportedOperationException("Please implement the isAllergicTo method");
+        return (this.allergyScore & allergen.getScore()) == allergen.getScore();
     }
 
     List<Allergen> getList() {
-        throw new UnsupportedOperationException("Please implement the getList method");
+        List<Allergen> list = new ArrayList<>();
+        for (Allergen allergen : Allergen.values()) {
+            if (isAllergicTo(allergen)) { // ใช้ method isAllergicTo ที่เราเขียนไว้
+                list.add(allergen);
+            }
+        }
+        return list;
     }
 }
